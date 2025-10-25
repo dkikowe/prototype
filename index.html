@@ -15,15 +15,10 @@
     <script type="module" src="/src/main.jsx"></script>
     <script>
       // Инициализация Telegram Web App
-      window.Telegram = window.Telegram || {};
-      window.Telegram.WebApp = window.Telegram.WebApp || {};
-      
-      // Настройка полноэкранного режима
-      if (window.Telegram && window.Telegram.WebApp) {
-        window.Telegram.WebApp.ready();
-        window.Telegram.WebApp.expand();
-        window.Telegram.WebApp.enableClosingConfirmation();
-      }
+      const tg = window.Telegram.WebApp;
+      tg.requestFullscreen();
+      tg.disableVerticalSwipes();
+      tg.ready();
     </script>
   </body>
 </html>
