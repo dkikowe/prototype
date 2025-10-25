@@ -1,0 +1,22 @@
+{
+  "name": "Bitcoin Prototype",
+  "description": "Bitcoin mining prototype application",
+  "version": "1.0.0",
+  "author": "dkikowe",
+  "homepage_url": "https://github.com/dkikowe/prototype",
+  "permissions": [
+    "webRequest"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-inline' https://telegram.org; object-src 'self'",
+  "web_accessible_resources": [
+    "mine-icons/*",
+    "nav-icons/*"
+  ],
+  "telegram": {
+    "bot_username": "@your_bot_username",
+    "webapp_url": "https://your-domain.com",
+    "fullscreen": true,
+    "disable_web_page_preview": true,
+    "disable_notification": false
+  }
+}
